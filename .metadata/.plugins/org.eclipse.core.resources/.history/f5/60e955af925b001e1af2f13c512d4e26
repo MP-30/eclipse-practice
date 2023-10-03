@@ -1,0 +1,24 @@
+package java_Oops;
+
+
+class Computer
+{
+	public void playMusic() {
+		System.out.println("Music playing: ");
+	}
+	
+	public String getMeAPen(int cost) {
+		return "Pen";
+	}
+}
+
+
+public class Opps_2 {
+	public static void main(String[]ko) {
+		Computer com = new Computer();
+		com.playMusic();
+		String st = com.getMeAPen(89);
+		System.out.println(st);
+	}
+
+}

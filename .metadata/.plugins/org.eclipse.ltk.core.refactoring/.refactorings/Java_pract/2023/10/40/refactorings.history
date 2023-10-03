@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;static_keywords.Basics&apos; to &apos;Static_variable&apos;&#x0A;- Original project: &apos;Java_pract&apos;&#x0A;- Original element: &apos;static_keywords.Basics&apos;&#x0A;- Renamed element: &apos;static_keywords.Static_variable&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Basics&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;static_keywords{Basics.java[Basics" matchStrategy="1" name="Static_variable" qualified="false" references="true" similarDeclarations="false" stamp="1696190681823" textual="false" version="1.0"/>
+</session>

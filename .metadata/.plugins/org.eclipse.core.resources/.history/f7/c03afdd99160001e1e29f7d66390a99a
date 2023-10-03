@@ -1,0 +1,43 @@
+package static_keywords;
+
+class Mobile {
+	String brand;
+	int price;
+	static String name;
+	
+	public void show() {
+		System.out.println(brand + " : " + price +" : "+ name);
+	}
+	
+	public static void show1(Mobile mb1) {
+		try {
+			System.out.println(mb1.brand + ":" +name);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+
+
+public class Basics {
+
+	public static void main (String a[]) {
+		
+		Mobile mb = new Mobile();
+		mb.brand = "Apple";
+		mb.price = 56;
+		Mobile.name = "SmartPhone";
+		
+		Mobile mb1 = new Mobile();
+		mb1.brand = "Samsung";
+		mb1.price = 586;
+		Mobile.name = "SmartPhone";
+		
+		Mobile.name = "Phone";
+		
+		Mobile.show1(mb);
+//		mb1.show();
+		
+	}
+}

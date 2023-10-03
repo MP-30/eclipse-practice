@@ -1,0 +1,12 @@
+package practice;
+
+public class For_each {
+	
+	public static void main (String...strings ) {
+		
+		char viowels[] = {'a','e','i','o','u'};
+		for(char item : viowels) {
+			System.out.println(item+"");
+		}
+	}
+}

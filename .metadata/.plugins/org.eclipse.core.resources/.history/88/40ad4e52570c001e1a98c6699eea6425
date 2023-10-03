@@ -1,0 +1,17 @@
+package inhertance_method_overriding_polym;
+
+public class Test {
+	
+	static public void main(String...strings) {  
+		
+		
+		Bike bike = new Bike();
+		bike.speedometer();
+		bike.autostart();
+		
+		bike.wheels();
+		
+		bike.dualExhaustSystem();
+		bike.twostrokeEngind();
+	}
+}

@@ -1,0 +1,27 @@
+package practice;
+
+public class Array {
+
+	public static void main(String [] args) {
+		
+		int h[] = {5,8,6,9,7,4,2};
+		
+		int i[][]= {{5,6,8},
+				{0,8,7},
+				{6,8,9},
+				{6,8,1,},
+				{2,4,8}
+				};
+		System.out.println("the number of rows are:" + i.length);
+		System.out.println("the number of coloums are:"+ i[0].length);
+		
+		for(int j=0; j<i.length;j++) {
+			for(int k = 0; k<i[j].length;k++) {
+				
+				System.out.print(i[j][k]+"_");
+			}
+			System.out.println(" ");
+		}
+				
+	}
+}

@@ -1,0 +1,24 @@
+package coreJavaBrushUp;
+
+public class Arrays {
+
+	public static void main(String...strings) {
+		 String[] Ar = new String[8];
+		 Ar[0] = "4";
+		 Ar[1] = "2.p";
+		 Ar[2] = "8.52";
+		 Ar[3] = "HKJ";
+		 Ar[4] = "GBH6";
+		 Ar[5] = "";
+		 Ar[8] = "sd";
+		 Ar[15]= "89j";
+		 
+		 int[] ar = {5,8,6,2,7,8};
+		 
+		 
+		 
+		 for(int i=0;i< Ar.length+ar.length;i++) {
+			 System.out.println(Ar[i]);
+		 }
+	}
+}

@@ -1,0 +1,27 @@
+package practice;
+
+public class Object_array {
+	
+	static public void main(String... fsjbki) {
+		
+		 Object ob[] = {123, "dnfjk", 23.36, "kdh", true};
+		 
+		 Object obj[][] = new Object[3][4];
+		 
+		 obj[0][0] = "Aditya0";
+		 obj[0][1] = "Aditya1";
+		 obj[0][2] = "Aditya2";
+		 obj[0][3] = "Aditya3";
+		 
+		 obj[0][0] = "Rohit0";
+		 obj[0][1] = "Rohit1";
+		 obj[0][2] = "Rohit2";
+		 obj[0][3] = "Rohit3";
+		 
+		 obj[0][0] = "Vivek0";
+		 obj[0][1] = "Vivek1";
+		 obj[0][2] = "Vivek2";
+		 obj[0][3] = "Vivek3";
+	}
+
+}

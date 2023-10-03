@@ -1,0 +1,35 @@
+package static_keywords;
+
+class Mobile {
+	String brand;
+	int price;
+	static String name;
+	
+	public void show() {
+		System.out.println(brand + " : " + price +" : "+ name);
+	}
+	
+}
+
+
+public class Basics {
+
+	public static void main (String a[]) {
+		
+		Mobile mb = new Mobile();
+		mb.brand = "Apple";
+		mb.price = 56;
+		mb.name = "SmartPhone";
+		
+		Mobile mb1 = new Mobile();
+		mb1.brand = "Samsung";
+		mb1.price = 586;
+		mb1.name = "SmartPhone";
+		
+		mb.name = "Phone";
+		
+		mb.show();
+		mb1.show();
+		
+	}
+}

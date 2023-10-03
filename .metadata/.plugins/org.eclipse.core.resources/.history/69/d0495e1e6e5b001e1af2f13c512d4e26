@@ -1,0 +1,20 @@
+package java_Oops;
+
+class Calculator{
+	int a ;
+	public int add()
+	{
+		System.out.println("in add");
+		return 2;
+	}
+}
+
+public class Class {
+
+	public static void main(String...strings ) {
+		Calculator calc = new Calculator();
+		
+		calc.add();
+		
+	}
+}

@@ -1,0 +1,19 @@
+package increment_decrement;
+
+public class Method_or_function {
+
+	static public void main(String[] sfkf) {
+
+		Method_or_function obj_new =  new Method_or_function();
+		String str1 = obj_new.hello();
+		System.out.println(str1);
+	}
+	
+	public String hello() {
+		String str_2 = "hello";
+		System.out.println("hello");
+		return str_2;
+	}
+	
+}
+

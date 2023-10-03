@@ -1,0 +1,20 @@
+package string;
+
+public class Basic_manipulation {
+
+	public static void main (String [] str) {
+		
+		String name = new String("aditya");
+		System.out.println(name);
+		System.out.println(name.hashCode());
+		System.out.println("hello " + name);
+		System.out.println(name.charAt(5));
+		System.out.println(name.concat(" Vinayak"));
+		
+		name = name + "Singh";
+		System.out.println(name);
+		
+		String name_2 = "ADITAY";
+		System.out.println(name == name_2);
+	}
+}

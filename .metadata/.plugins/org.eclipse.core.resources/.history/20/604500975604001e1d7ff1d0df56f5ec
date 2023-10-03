@@ -1,0 +1,182 @@
+package Sai_Roshini;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Data_delete_processes {
+	public static WebDriver driver;
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		WebDriverManager.chromedriver().setup();
+		
+		driver = new ChromeDriver();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		Actions action = new Actions(driver);
+		
+		driver.manage().window().maximize();
+		
+//		WebDriverWait wait = new WebDriverWait(driver, 20);
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		driver.get("https://saiuat.easycloud.co.in/erp/security/Login");
+
+//         Thread.sleep(3000);
+
+		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+// 		Login page
+		
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input[@id='user']"))));
+
+		WebElement login_id = driver.findElement(By.xpath("//input[@id='user']"));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input[@id='password']"))));
+		
+		WebElement pass = driver.findElement(By.xpath("//input[@id='password']"));
+		
+		login_id.sendKeys("adithya");
+		pass.sendKeys("123456");
+		
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//td[@class='Button_text Button_width']"))));
+		
+		boolean login = driver.findElement(By.xpath("//td[@class='Button_text Button_width']")).isDisplayed();
+
+		if (login == true) {
+			System.out.println("Login button is visible");
+		} else {
+			System.out.println("Login button is not visible");
+		}
+
+		WebElement login_button = driver.findElement(By.xpath("//td[@class='Button_text Button_width']"));
+		
+		login_button.click();
+		
+//		Search button
+		Thread.sleep(5000);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("isc_C"))));
+		
+		
+		WebElement search = driver.findElement(By.id("isc_C"));
+		
+		search.click();
+
+					
+//		----------------
+//		WebElement search_text = driver.findElement(By.xpath("//input[@name='value']"));
+//		
+//		wait.until(ExpectedConditions.elementToBeClickable(search_text));
+//		
+//		search_text.sendKeys("Client Master");
+//		
+//		Thread.sleep(1500);
+//		
+//		search_text.sendKeys(Keys.ENTER);
+
+//		-------------------
+		//		WebElement search_text = driver.findElement(By.xpath("//input[@name='value']").sendKeys("Client Master")); 
+//		search_text.sendKeys("Client Master");
+//		---------------------
+//		wait.until(ExpectedConditions.elementToBeClickable(By.name("aadhaarnumber")));
+//		
+//		WebElement adhar_search_text = driver.findElement(By.name("aadhaarnumber"));		
+//		
+//		adhar_search_text.sendKeys("598149064414");
+/***
+		js.executeScript("document.getElementById(isc_AS.value='598149064414')");
+***/		Thread.sleep(2000);
+		
+//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nobr[normalize-space()='598149064414']")));
+//		
+//		WebElement adhar_select = driver.findElement(By.xpath("//nobr[normalize-space()='598149064414']"));
+//		
+//		boolean adhar_select_is = adhar_select.isDisplayed();
+//		
+//		if(adhar_select_is == true) {
+//				 
+//		adhar_select.click();
+//		System.out.println("Checkbox is selected");
+//		}
+//		
+//		else {
+//			System.out.println("checkbox not selected");
+//		}
+//		Thread.sleep(2000);
+	/***	
+		select loan
+		driver.findElement(By.xpath("(//td)[260]")).click();
+		
+		Thread.sleep(2000);
+		delete button
+		boolean delete = driver.findElement(By.xpath("//body[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[23]/table[1]/tbody[1]/tr[1]/td[1]")).isDisplayed();
+		if(delete == true) {
+			System.out.println("true");
+			driver.findElement(By.xpath("//body[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[23]/table[1]/tbody[1]/tr[1]/td[1]")).click();
+		}
+		else {
+			System.out.println("false");
+		}
+		
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//td[contains(text(),'Yes')]")).click();
+		delete location---1 
+		***/
+//		Thread.sleep(2000);
+//		
+//		driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div[1]/div[7]/div")).click();
+//		Thread.sleep(2000);
+//		try {	
+//			boolean delete1 = driver.findElement(By.xpath("//body[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[23]/table[1]/tbody[1]/tr[1]/td[1]")).isDisplayed();
+//			if(delete1 == true) {
+//				System.out.println("true1");
+//				driver.findElement(By.xpath("//body[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[23]/table[1]/tbody[1]/tr[1]/td[1]")).click();
+//			}
+//			else {
+//				System.out.println("false1");
+//			}
+//		}
+//		catch(Exception e){
+//			System.out.println("sometning went wrong");
+//		}
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//td[contains(text(),'Yes')]")).click();
+//	
+//		Pre-enq delete process
+
+		WebElement search_text_again = driver.findElement(By.xpath("//input[@name='value']"));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(search_text_again));
+		
+		search_text_again.sendKeys("Pre-Enquiry Form");
+		
+		Thread.sleep(1500);
+		
+		search_text_again.sendKeys(Keys.ENTER);
+		
+//		clear filter
+		driver.findElement(By.xpath("//span[@class='OBGridNotificationTextLink']")).click();
+//		Checkbox
+		driver.findElement(By.xpath("//input[@name='prooftypenumber']")).sendKeys("598149064414");
+		
+		driver.findElement(By.cssSelector("div[role='label'][eventproxy='isc_Number_4']")).click();
+		
+		
+	
+	}
+}

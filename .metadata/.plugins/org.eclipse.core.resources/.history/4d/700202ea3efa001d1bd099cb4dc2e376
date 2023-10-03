@@ -1,0 +1,10 @@
+package Selenium_practice;
+
+public class sending_a_mail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

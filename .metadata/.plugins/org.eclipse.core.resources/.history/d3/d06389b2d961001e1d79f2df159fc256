@@ -1,0 +1,39 @@
+package static_keywords;
+
+class Mobile_1{
+	String brand;
+	int price;
+	static String name;
+	
+	public void  show() {
+	
+		System.out.println(brand + " :"+ price + " :"+ name);
+	}
+	
+	public static void show1(Mobile_1 obj){
+		System.out.println("in static method");
+		System.out.println(obj.brand + " :"+ obj.price + " :"+ name);
+
+	}
+}
+
+
+public class Static_method {
+	
+
+	public static void main(String...strings) {
+		 
+
+		Mobile_1 mb = new Mobile_1();
+		mb.brand = "Apple";
+		mb.price = 56;
+		
+		
+		Mobile_1 mb1 = new Mobile_1();
+		mb1.brand = "Samsung";
+		mb1.price = 586;
+		
+//		Mobile_1.show(mb);
+		Mobile_1.show1(mb1);
+	}
+}

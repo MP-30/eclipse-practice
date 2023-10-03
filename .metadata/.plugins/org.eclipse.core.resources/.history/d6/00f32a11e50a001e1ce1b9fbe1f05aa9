@@ -1,0 +1,33 @@
+package practice;
+
+public class Methods {
+	
+	
+	public static void main(String...strings) {
+		aditya();
+		sample();
+	}
+
+	public static int aditya() {
+		int i = 3;
+		int j = 6;
+		
+		int m = i+j;
+		
+		return m;
+		
+	}
+	public  String sample() {
+		String str1 = "Aditay";
+		String str2 = "Rahul";
+		
+		String str3 = str1+str2;
+		
+		return str3;
+		
+	}
+	
+	public static void final_1() {
+		
+	}
+}

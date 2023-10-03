@@ -1,0 +1,12 @@
+package practice;
+
+public class While_loop {
+	public static void main(String[] sd) {
+		int n = 1;
+		while (n < 100) {
+			System.out.println("Hi: " + n);
+			n++;	
+		}
+	}
+
+}

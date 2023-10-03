@@ -1,0 +1,12 @@
+package practice;
+
+public class PrintF {
+
+	public static void main(String...strings) {
+	String s = "gfdgsUII";
+	String s1 = "45645dfsd";
+	
+	System.out.printf("%-15S  %s",s , s1);
+	
+	}
+}

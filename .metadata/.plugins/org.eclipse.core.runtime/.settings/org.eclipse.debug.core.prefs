@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n    <expression enabled\="true" text\="&\#9;&\#9;        &\#9;String value_cibil \= driver.findElement(By.xpath(&quot;//input[@name\='actualcibilscore']&quot;)).getText();&\#10;"/>\n    <expression enabled\="true" text\="value_cibil"/>\n    <expression enabled\="true" text\="value_cibil"/>\n</watchExpressions>\n

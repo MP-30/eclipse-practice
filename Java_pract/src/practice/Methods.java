@@ -1,0 +1,58 @@
+package practice;
+
+public class Methods {
+	
+	
+	public static void main(String...strings) {
+	
+		Methods obj = new Methods();
+		
+		int ad = obj.aditya();
+		System.out.println(ad);
+		
+		String st = obj.sample();
+		System.out.println(st);
+		
+		boolean bo = obj.final_1();
+		System.out.println(bo);
+		
+		obj.bedroom();
+		obj.cash();
+	}
+
+	public  int aditya() {
+		int i = 3;
+		int j = 6;
+		
+		int m = i+j;
+		
+		return m;
+		
+	}
+	public String sample() {
+		String str1 = "Aditay";
+		String str2 = "Rahul";
+		
+		String str3 = str1+ " "+str2;
+		
+		return str3;
+		
+	}
+	
+	public boolean final_1() {
+		
+		boolean b1 = 10>30;
+		boolean b2 = 67>56;
+		
+		return b1;
+		
+	}
+	
+	private void bedroom() {
+		
+	}
+
+	protected void cash() {
+		
+	}
+}

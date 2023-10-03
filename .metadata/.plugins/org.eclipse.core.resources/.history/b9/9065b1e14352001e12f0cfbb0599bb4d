@@ -1,0 +1,13 @@
+package practice;
+
+public class Star_pattern {
+	public static void main(String ...bhv) {
+	 
+		   String name = "Cameron";
+		    String site = "TechTarget";
+		System.out.printf("I like the stuff %s writes on %S. ", name, site);
+		}
+		
+	}
+
+

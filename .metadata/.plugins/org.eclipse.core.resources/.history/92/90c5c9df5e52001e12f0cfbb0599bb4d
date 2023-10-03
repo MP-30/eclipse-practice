@@ -1,0 +1,15 @@
+package practice;
+
+public class If_else {
+
+	public static void main(String...sfs) {
+		int n = 5;
+		int result = 0;
+		
+		if(n%2 == 0) {
+			result = 10;
+		}
+		else
+			result = 20;
+	}
+}

@@ -1,0 +1,34 @@
+package first;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Assertions {
+
+	//	Assertions = checkpoints.
+	
+	@Test
+	
+	public void Critical() {
+		String ExpectedOutPut = "We are learning in English";
+		String ActualOutPut = "We are learning in English and Hindi";
+		
+		Assert.assertEquals(ActualOutPut, ExpectedOutPut);
+	}
+	@Test
+	
+	public void High() {
+		
+	}
+	
+	@Test
+	
+	public void Medium() {
+		
+	}
+	@Test
+	
+	public void Low() {
+		
+	}
+}
